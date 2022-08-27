@@ -1,0 +1,27 @@
+.buttons {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+ }
+
+.buttons__button {
+    background-color: white;
+    border: none;
+    color:teal;
+    width: 200px;
+    height: 50px ;
+    transition: 1s;
+    padding: 1%;
+    cursor: pointer;
+}
+
+.buttons__button:disabled { 
+    color: #ccc;
+}
+
+@media(max-width: 767px) {
+    .buttons__button {
+        flex-basis: 100%;
+        margin: 10px;
+    }
+}
