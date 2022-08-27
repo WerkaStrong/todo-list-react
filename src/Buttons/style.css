@@ -19,6 +19,10 @@
     color: #ccc;
 }
 
+.buttons__button:hover {
+    color: hsl(180, 100%, 35%);
+}
+
 @media(max-width: 767px) {
     .buttons__button {
         flex-basis: 100%;
