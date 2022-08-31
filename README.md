@@ -3,8 +3,9 @@
 This is a simple "to do list". You can add your tasks to do, delete them or mark them as done.
 
 ## Demo
+https://werkastrong.github.io/todo-list-react/
 
-![screenshot](/CSS/images/share.PNG)
+![screenshot](/todo-list-react/public/share.PNG)
 
 # Getting Started with Create React App
 
