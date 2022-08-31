@@ -2,6 +2,10 @@
 
 This is a simple "to do list". You can add your tasks to do, delete them or mark them as done.
 
+## Demo
+
+![screenshot](/CSS/images/share.PNG)
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
