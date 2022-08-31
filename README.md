@@ -5,7 +5,7 @@ This is a simple "to do list"- my first React application without interactions.
 ## Demo
 https://werkastrong.github.io/todo-list-react/
 
-![screenshot](/public/logo_black.png)
+![screenshot](/public/share.PNG)
 
 # Getting Started with Create React App
 
