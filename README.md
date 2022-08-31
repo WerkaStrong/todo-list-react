@@ -1,6 +1,6 @@
 # Task list
 
-This is a simple "to do list". You can add your tasks to do, delete them or mark them as done.
+This is a simple "to do list"- my first React application without interactions.
 
 ## Demo
 https://werkastrong.github.io/todo-list-react/
