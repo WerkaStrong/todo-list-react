@@ -18,7 +18,7 @@ https://werkastrong.github.io/todo-list-react/
   <li>Media queries</li>
 </ul>
 
-![screenshot](/public/share.PNG)
+![screenshot](/public/printscreen.PNG)
 
 # Getting Started with Create React App
 
