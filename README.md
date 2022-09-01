@@ -1,6 +1,24 @@
 # Task list
 
-This is a simple "to do list". You can add your tasks to do, delete them or mark them as done.
+This is a simple "to do list"- my first React application without interactions.
+
+## Demo
+https://werkastrong.github.io/todo-list-react/
+
+## Technologies used
+<ul>
+  <li>React</li>
+  <li>Create React App</li>
+  <li>Webpack</li>
+  <li>Babel</li>
+  <li>HTML</li>
+  <li>CSS</li>
+  <li>JS</li>
+  <li>GRID</li>
+  <li>Media queries</li>
+</ul>
+
+![screenshot](/public/share.PNG)
 
 # Getting Started with Create React App
 
