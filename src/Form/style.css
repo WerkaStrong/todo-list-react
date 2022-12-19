@@ -28,6 +28,11 @@
 }
 
 @media (max-width: 767px) {
+    .form {
+        display: flex;
+        flex-direction: column;
+    }
+
     .form__input {
         display: grid;
         grid-template-columns: 1fr;
