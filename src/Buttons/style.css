@@ -27,5 +27,6 @@
     .buttons__button {
         flex-basis: 100%;
         margin: 0;
+        padding: 0,5%;
     }
 }
