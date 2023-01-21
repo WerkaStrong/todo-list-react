@@ -2,11 +2,12 @@
     display: grid;
     grid-template-columns: 1fr auto;
     grid-gap: 20px;
+    padding: 20px;
 }
 
 .form__input {
     padding: 10px;
-    border: 1px solid #ddd;
+    border: 1px solid black;
 }
 
 .form__button {
@@ -28,6 +29,11 @@
 }
 
 @media (max-width: 767px) {
+    .form {
+        display: flex;
+        flex-direction: column;
+    }
+
     .form__input {
         display: grid;
         grid-template-columns: 1fr;

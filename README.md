@@ -1,6 +1,6 @@
 # Task list
 
-This is a simple "to do list"- my first React application without interactions.
+This is a simple "to do list"- my first React application with interactions.
 
 ## Demo
 https://werkastrong.github.io/todo-list-react/
