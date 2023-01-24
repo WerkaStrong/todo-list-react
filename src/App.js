@@ -8,7 +8,7 @@ import Container from './Container';
 
 function App() {
   const [hideDone, setHideDone] = useState(false);
-  
+
   const [tasks, setTasks] = useState(
     JSON.parse(localStorage.getItem("tasks")) || []);
 
@@ -25,31 +25,30 @@ function App() {
   };
 
   const toggleTaskDone = (id) => {
-    setTasks(tasks => tasks.map(task => {
-      if(task.id === id) {
-        return { ...task, done: !task.done };
-      }
-
-      return task;
-    }));
+    setTasks(tasks => tasks.map(task => 
+      task.id === id ? { ...task, done: !task.done } : task
+    ));
   };
 
   const setAllDone = () => {
     setTasks(tasks => tasks.map(task => ({
-      ...task, 
-      done:true,
+      ...task,
+      done: true,
     })));
   };
 
   const addNewTask = (content) => {
-    setTasks(tasks => 
-      [...tasks,
+    setTasks(tasks => [
+      ...tasks,
       {
         content,
         done: false,
-        id: tasks.length ? tasks[tasks.length -1].id +1 : 1,
-      }])
-  }
+        id: tasks.length ? tasks[tasks.length - 1].id + 1 : 1,
+      }
+    ]);
+  };
+
+
 
 
   return (
@@ -57,14 +56,14 @@ function App() {
       <Header title="Lista zadań" />
       <Section
         title="Dodaj nowe zadanie"
-        body={<Form addNewTask={addNewTask}/>}
+        body={<Form addNewTask={addNewTask} />}
       />
 
       <Section
         title="Lista zadań"
         body={
           <Tasks
-            tasks={tasks} 
+            tasks={tasks}
             hideDone={hideDone}
             removeTask={removeTask}
             toggleTaskDone={toggleTaskDone}
