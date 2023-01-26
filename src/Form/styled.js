@@ -1,4 +1,4 @@
-import styled, { css } from "styled-components";
+import styled from "styled-components";
 
 export const FormField = styled.form`
     display: grid;
@@ -25,12 +25,12 @@ export const Button = styled.button`
     transition: 1s;
     cursor: pointer;
 
-        &:hover {
-            background: hsl(180, 100%, 35%);
-            transform: scale(1.1);
-        }
+    &:hover {
+        background: hsl(180, 100%, 35%);
+        transform: scale(1.1);
+    }
 
-        &:active {
-            background: hsl(180, 100%, 35%);
-        }
+     &:active {
+        background: hsl(180, 100%, 35%);
+    }
 `;
