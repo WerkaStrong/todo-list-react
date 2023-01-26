@@ -5,7 +5,7 @@ import { ButtonField, Button } from "./styled";
 const Buttons = ({ tasks, hideDone, toggleHideDone, setAllDone }) => (
   <ButtonField className="buttons">
     {tasks.length > 0 && (
-      <React.Fragment>
+      <>
         <Button
           onClick={toggleHideDone}
         >
@@ -17,7 +17,7 @@ const Buttons = ({ tasks, hideDone, toggleHideDone, setAllDone }) => (
         >
           Ukończ wszystkie
         </Button>
-      </React.Fragment>
+      </>
     )}
   </ButtonField>
 );
