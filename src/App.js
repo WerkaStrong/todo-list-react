@@ -18,7 +18,6 @@ function App() {
     addNewTask
   } = useTasks();
 
-
   return (
     <Container className="container">
       <Header title="Lista zadań" />
