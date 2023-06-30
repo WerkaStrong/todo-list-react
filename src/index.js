@@ -26,8 +26,23 @@ const tasksReducer = (state = initialState, action) => {
 
 };
 
+const addTask = content => ({
+  type: "addTask",
+  payload: content,
+});
+
+const selectTasks = ({ tasks }) => tasks;
+
 const store =  configureStore({ reducer: tasksReducer });
-console.log(store.getState());
+console.log(selectTasks(store.getState()));
+
+store.dispatch(addTask("zadanie 1"));
+
+console.log(selectTasks(store.getState()));
+
+store.dispatch(addTask("zadanie 2"));
+
+console.log(selectTasks(store.getState()));
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
