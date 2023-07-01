@@ -1,9 +1,11 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import { GlobalStyle} from "./GlobalStyle"
+import { Provider } from 'react-redux';
+import { GlobalStyle } from "./GlobalStyle"
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { configureStore } from '@reduxjs/toolkit';
+import store from './store';
 
 const initialState = {
   tasks: [],
@@ -26,29 +28,14 @@ const tasksReducer = (state = initialState, action) => {
 
 };
 
-const addTask = content => ({
-  type: "addTask",
-  payload: content,
-});
-
-const selectTasks = ({ tasks }) => tasks;
-
-const store =  configureStore({ reducer: tasksReducer });
-console.log(selectTasks(store.getState()));
-
-store.dispatch(addTask("zadanie 1"));
-
-console.log(selectTasks(store.getState()));
-
-store.dispatch(addTask("zadanie 2"));
-
-console.log(selectTasks(store.getState()));
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <GlobalStyle/>
-    <App />
+    <Provider store={store}>
+      <GlobalStyle />
+      <App />
+    </Provider>
   </React.StrictMode>
 );
 
