@@ -5,9 +5,12 @@ This is a simple "to do list"- my first React application with interactions.
 ## Demo
 https://werkastrong.github.io/todo-list-react/
 
+![listodo_animation](https://github.com/WerkaStrong/todo-list-react/assets/98229283/252f5616-0bd4-4c1f-bb62-08eae3948f42)
+
 ## Technologies used
 <ul>
   <li>React</li>
+  <li>Redux</li>
   <li>Create React App</li>
   <li>Webpack</li>
   <li>Babel</li>
@@ -17,8 +20,6 @@ https://werkastrong.github.io/todo-list-react/
   <li>GRID</li>
   <li>Media queries</li>
 </ul>
-
-![screenshot](/public/printscreen.PNG)
 
 # Getting Started with Create React App
 
