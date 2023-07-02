@@ -4,30 +4,7 @@ import { Provider } from 'react-redux';
 import { GlobalStyle } from "./GlobalStyle"
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-import { configureStore } from '@reduxjs/toolkit';
 import store from './store';
-
-const initialState = {
-  tasks: [],
-};
-
-const tasksReducer = (state = initialState, action) => {
-  if (action.type === "addTask") {
-    return {
-      ...state,
-      tasks: [
-        ...state.tasks,
-        {
-          content: action.payload,
-        },
-      ],
-    };
-  }
-
-  return state;
-
-};
-
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
