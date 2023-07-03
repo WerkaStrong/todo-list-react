@@ -12,21 +12,19 @@ const Form = () => {
 
     const onFormSubmit = (event) => {
         event.preventDefault();
+        const trimmedNewTaskContent = newTaskContent.trim();
 
-        if (newTaskContent === "") {
+        if (!trimmedNewTaskContent) {
             return;
         }
 
         dispatch(addTask({
-            content: newTaskContent.trim(),
+            content: trimmedNewTaskContent,
             done: false,
             id: nanoid(),
         }));
 
         setNewTaskContent("");
-    };
-
-    const focusInput = () => {
         inputRef.current.focus();
     };
 
@@ -41,7 +39,6 @@ const Form = () => {
                 onChange={({ target }) => setNewTaskContent(target.value)}
             />
             <Button
-                onClick={focusInput}
                 hover
                 active
             >
