@@ -14,7 +14,6 @@ function Tasks() {
         title="Dodaj nowe zadanie"
         body={<Form/>}
       />
-
       <Section
         title="Lista zadań"
         body={
@@ -24,7 +23,6 @@ function Tasks() {
           <Buttons/>
         }
       />
-
     </Container>
   );
 }
