@@ -12,11 +12,6 @@ export const FormField = styled.form`
     }
 `;
 
-export const Input = styled.input`
-    padding: 10px;
-    border: 1px solid black;
-`;
-
 export const Button = styled.button`
     border: none;
     background-color:hsl(180, 100%, 25%);

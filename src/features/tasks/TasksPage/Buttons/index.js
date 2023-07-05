@@ -8,7 +8,7 @@ selectIsEveryTaskDone,
 selectIsTaskEmpty,
 selectHideDone,
 fetchExampleTasks,
-} from "../tasksSlice";
+} from "../../tasksSlice";
 
 const Buttons = () => {
   const isEveryTaskDone = useSelector(selectIsEveryTaskDone);
