@@ -30,30 +30,44 @@ const tasksSlice = createSlice({
             tasks.splice(index, 1);
         },
         fetchExampleTasks: () => { },
-        //zastępuje wszystkie zadania
-        setTasks: (state, {payload:tasks}) => {
+
+        setTasks: (state, { payload: tasks }) => {
             state.tasks = tasks;
         },
 
     },
 });
 
-//export funkcji addTask
-export const { 
+
+export const {
     addTask,
     toggleHideDone,
-    toggleTaskDone, 
-    setAllDone, 
+    toggleTaskDone,
+    setAllDone,
     removeTask,
     fetchExampleTasks,
     setTasks,
- } = tasksSlice.actions;
-//selektor (z całego state daje nam tylko tasks)
+} = tasksSlice.actions;
+
 export const selectTasksState = state => state.tasks;
 
 export const selectTasks = state => selectTasksState(state).tasks;
 export const selectHideDone = state => selectTasksState(state).hideDone;
 export const selectIsEveryTaskDone = state => selectTasks(state).every(({ done }) => done);
 export const selectIsTaskEmpty = state => selectTasks(state).length === 0;
-//export reducera
+
+export const getTaskById = (state, taskId) =>
+    selectTasks(state).find(({ id }) => id === taskId);
+
+export const selectTaskByQuery = (state, query) => {
+    const tasks = selectTasks(state);
+
+    if (!query || query.trim() === "") {
+        return tasks;
+    }
+    return tasks.filter(({ content }) =>
+        content.toUpperCase().includes(query.trim().toUpperCase()));
+}
+
+
 export default tasksSlice.reducer;
