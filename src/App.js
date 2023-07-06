@@ -28,12 +28,12 @@ export default () => (
                 <Route path="/zadania/:id">
                     <TaskPage />
                 </Route>
+                <Route path="/autor">
+                    <AuthorPage />
+                </Route>
                 <Route path="/">
                     <Redirect to="/zadania" />
                     <TasksPage />
-                </Route>
-                <Route path="/autor">
-                    <AuthorPage />
                 </Route>
             </Switch>
         </nav>
