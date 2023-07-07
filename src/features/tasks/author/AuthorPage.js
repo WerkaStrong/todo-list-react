@@ -8,7 +8,7 @@ export default () => (
         <Header title="O autorze"></Header>
         <Section
             title="Weronika Chmielewska"
-            body={<>nanana </>}
+            body={<>Cześć! Nazywam się Weronika Chmielewska, jestem początkującą Fronten Developerką.</>}
         />
     </Container>
 );
