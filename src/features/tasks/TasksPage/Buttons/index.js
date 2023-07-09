@@ -7,7 +7,6 @@ setAllDone,
 selectIsEveryTaskDone,
 selectIsTaskEmpty,
 selectHideDone,
-fetchExampleTasks,
 } from "../../tasksSlice";
 
 const Buttons = () => {
@@ -17,9 +16,6 @@ const Buttons = () => {
   const dispatch = useDispatch();
   return (
     <ButtonField className="buttons">
-      <Button onClick={() => dispatch(fetchExampleTasks())}>
-        Pobierz przykładowe zadania
-      </Button>
       {!isTaskEmpty && (
         <>
           <Button
