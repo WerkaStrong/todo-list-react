@@ -20,9 +20,9 @@ export const Button = styled.button`
         color: #ccc;
     `}
 
-    ${({ hover }) => hover && css`
+    &:hover {
         color: hsl(180, 100%, 35%);
-    `}
+    }
 
     @media(max-width: 767px) {
         flex-basis: 100%;
