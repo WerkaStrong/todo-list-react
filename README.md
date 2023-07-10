@@ -5,7 +5,7 @@ This is a simple "to do list"- my first React application with interactions.
 ## Demo
 https://werkastrong.github.io/todo-list-react/
 
-![listodo_exampletask](https://github.com/WerkaStrong/todo-list-react/assets/98229283/ea5dc846-e768-439d-a573-c284b58b4bf7)
+![listodo_examtask](https://github.com/WerkaStrong/todo-list-react/assets/98229283/2c195882-bfe1-4a94-ba98-89159dc29634)
 
 ## Technologies used
 <ul>
