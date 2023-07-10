@@ -5,7 +5,7 @@ import Container from '../../../common/Container';
 import { useParams } from 'react-router-dom';
 import { useSelector } from 'react-redux';
 import { getTaskById } from '../tasksSlice';
-import { StyledDiv } from './styled';
+import { StyledDiv } from '../../../styled';
 
 function TaskPage() {
     const { id } = useParams();
