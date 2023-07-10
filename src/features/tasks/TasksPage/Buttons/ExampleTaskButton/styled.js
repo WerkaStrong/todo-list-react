@@ -2,7 +2,7 @@ import styled, { css } from "styled-components";
 
 export const Button = styled.button`
     background-color: white;
-    width: 200px;
+    width: 300px;
     margin: 0;
     border: none;
     color:teal;
@@ -24,5 +24,6 @@ export const Button = styled.button`
         flex-basis: 100%;
         margin: 0;
         padding: 0,5%;
+        width: auto;
     }
 `;
