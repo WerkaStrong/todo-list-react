@@ -16,7 +16,7 @@ export const Button = styled.button`
         padding: 3%;
     `}
 
-    &:hover {
+    &:hover:not([disabled]) {
         color: hsl(180, 100%, 35%);
     }
 

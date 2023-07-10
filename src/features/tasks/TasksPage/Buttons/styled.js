@@ -10,7 +10,7 @@ export const Button = styled.button`
     background-color: white;
     border: none;
     color:teal;
-    width: 170px;
+    width: auto;
     height: 50px ;
     transition: 1s;
     padding: 1%;
@@ -18,6 +18,7 @@ export const Button = styled.button`
 
     ${({ disabled }) => disabled && css`
         color: #ccc;
+        cursor: none;
     `}
 
     &:hover {
