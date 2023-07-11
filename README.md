@@ -5,12 +5,13 @@ This is a simple "to do list"- my first React application with interactions.
 ## Demo
 https://werkastrong.github.io/todo-list-react/
 
-![listodo_animation](https://github.com/WerkaStrong/todo-list-react/assets/98229283/252f5616-0bd4-4c1f-bb62-08eae3948f42)
+![listodo_examtask](https://github.com/WerkaStrong/todo-list-react/assets/98229283/2c195882-bfe1-4a94-ba98-89159dc29634)
 
 ## Technologies used
 <ul>
   <li>React</li>
-  <li>Redux</li>
+  <li>React Redux</li>
+  <li>React Saga</li>
   <li>Create React App</li>
   <li>Webpack</li>
   <li>Babel</li>
