@@ -6,14 +6,17 @@ export const Button = styled.button`
     margin: 0;
     border: none;
     color:teal;
-    padding: 3%;
+    padding: 20px;
     cursor: pointer;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
 
     ${({ disabled }) => disabled && css`
         color: #ccc;
         margin: 0;
         border: none;
-        padding: 3%;
+        padding: 20px;
     `}
 
     &:hover:not([disabled]) {
