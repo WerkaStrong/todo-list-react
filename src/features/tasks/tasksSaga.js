@@ -13,7 +13,6 @@ function* fetchExampleTaskHandler() {
 }
 
 function * saveTasksInLocalStorageHandler() {
-    //pobieranie wartości ze store
     const tasks = yield select(selectTasks);
     yield call(saveTasksInLocalStorage, tasks);
 }

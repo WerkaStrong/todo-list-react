@@ -2,10 +2,8 @@ import React from "react";
 import { StyledLi, StyledNav, StyledNavLink, StyledUl } from "./styled";
 
 export const Navigation = () => (
-
     <StyledNav>
         <StyledUl>
-
             <StyledLi>
                 <StyledNavLink
                     to="/zadania"

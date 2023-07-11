@@ -10,7 +10,6 @@ const tasksSlice = createSlice({
         isLoading: false,
     },
     reducers: {
-        //  ({ stan (poprzedni) }, {akcja})
         addTask: ({ tasks }, { payload: newTask }) => {
             tasks.push(newTask);
         },
