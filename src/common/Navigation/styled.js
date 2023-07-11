@@ -8,6 +8,11 @@ export const StyledNavLink = styled(NavLink)`
     &.active{
         font-weight: bold;
     }
+
+    &:hover{
+        text-shadow: 0px 0px white;
+    }
+   
 `;
 
 export const StyledNav = styled.nav`
@@ -20,7 +25,7 @@ export const StyledNav = styled.nav`
 
 export const StyledUl = styled.ul`
     margin: 0 10px;
-    display:flex;
+    display: flex;
     flex-direction: row;
 `;
 
