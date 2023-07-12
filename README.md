@@ -12,6 +12,7 @@ https://werkastrong.github.io/todo-list-react/
   <li>React</li>
   <li>React Redux</li>
   <li>React Saga</li>
+  <li>React Toolkit</li>
   <li>Create React App</li>
   <li>Webpack</li>
   <li>Babel</li>
